@@ -81,25 +81,6 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 350px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 </style>
 <body>
 
@@ -109,41 +90,251 @@ input[type=button], input[type=submit], input[type=reset] {
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Size,Variables & Methods</a>
-    <a href= "inheritance.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Inheritance</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Inheritance</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Coupling</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Control Structures</a>
     
   </div>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
 
 
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h1>Size,Variables & Methods</h1>
-    <h3>GET START</h3>
-	<input href="inheritance.jsp" type="button" value="SIZE">
-	<input href="inheritance.jsp" type="button" value="VARIABLES">
-	<input href="inheritance.jsp" type="button" value="METHODS">
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h1>Inheritance</h1>
+<div style="width: 20%; height:100%;" class="split left">
+  <div class="centered">
     
-	<input href="inheritance.jsp" type="button" value="GET START">
+    <h2>Select File</h2>
+    <form>
+		<label for="fname">File Path</label>
+		<input type="text" id="fpath" name="fpath">
+	</form>
+	<input type="button" value="Execute">
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h1>Coupling</h1>
+</div>
+
+<div style="width: 80%; height:100%;"  class="split right">
+
+
+  <div class="container">
     
-	<input href="inheritance.jsp" type="button" value="GET START">
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <h1>Control Structures</h1>
-    
-	<input href="inheritance.jsp" type="button" value="GET START">
+    <h2>COMPLEXITY DUE TO COUPLING</h2>
+    <table width="100%">
+	<colgroup>
+       <col width="2%" />
+       <col width="30%" />
+       <col width="3%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	   <col width="4%" />
+	</colgroup>
+  <tr>
+    <th style="font-size:12px">line num</th>
+    <th style="font-size:12px">Program statement</th>
+    <th style="font-size:12px">Nr</th>
+	<th style="font-size:12px">Nmcms</th>
+	<th style="font-size:12px">Nmcmd</th>
+	<th style="font-size:12px">Nmcrms</th>
+	<th style="font-size:12px">Nmcrmd</th>
+	<th style="font-size:12px">Nrmcrms</th>
+	<th style="font-size:12px">Nrmcrmd</th>
+	<th style="font-size:12px">Nrmcms</th>
+	<th style="font-size:12px">Nrmcmd</th>
+	<th style="font-size:12px">Nmrgvs</th>
+	<th style="font-size:12px">Nmrgvd</th>
+	<th style="font-size:12px">Nrmrgvs</th>
+	<th style="font-size:12px">Nrmrgvd</th>
+	<th style="font-size:12px">Ccp</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td>7</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td>8</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td>9</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+    <tr>
+    <td>10</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+</table>
   </div>
 </div>
 
