@@ -81,25 +81,6 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 350px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 </style>
 <body>
 
@@ -115,35 +96,149 @@ input[type=button], input[type=submit], input[type=reset] {
     
   </div>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
 
 
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h1>Size,Variables & Methods</h1>
-    <h3>GET START</h3>
-	<input href="inheritance.jsp" type="button" value="SIZE">
-	<input href="inheritance.jsp" type="button" value="VARIABLES">
-	<input href="inheritance.jsp" type="button" value="METHODS">
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h1>Inheritance</h1>
+<div style="width: 30%; height:100%;" class="split left">
+  <div class="centered">
     
-	<input href="inheritance.jsp" type="button" value="GET START">
+    <h2>Select File</h2>
+    <form>
+		<label for="fname">File Path</label>
+		<input type="text" id="fpath" name="fpath">
+	</form>
+	<input href="inheritance.jsp" type="button" value="Execute">
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h1>Coupling</h1>
+</div>
+
+<div style="width: 70%; height:100%;"  class="split right">
+
+
+  <div class="container">
     
-	<input href="inheritance.jsp" type="button" value="GET START">
-  </div>
-  <div class="column" style="background-color:#ddd;">
-    <h1>Control Structures</h1>
-    
-	<input href="inheritance.jsp" type="button" value="GET START">
+    <h2>COMPLEXITY DUE TO SIZE</h2>
+    <table>
+	<colgroup>
+       <col width="2%" />
+       <col width="44%" />
+       <col width="8%" />
+	   <col width="8%" />
+	   <col width="8%" />
+	   <col width="8%" />
+       <col width="8%" />
+	   <col width="8%" />
+    </colgroup>
+  <tr>
+    <th>line num</th>
+    <th>Program statement</th>
+    <th>Nkw</th>
+	<th>Nid</th>
+	<th>Nop</th>
+	<th>Nnv</th>
+	<th>Nsl</th>
+	<th>Cs</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+</table>
   </div>
 </div>
 
