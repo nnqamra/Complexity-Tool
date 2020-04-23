@@ -81,25 +81,6 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 350px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 </style>
 <body>
 
@@ -109,41 +90,146 @@ input[type=button], input[type=submit], input[type=reset] {
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Size,Variables & Methods</a>
-    <a href= "inheritance.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Inheritance</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Inheritance</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Coupling</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Control Structures</a>
     
   </div>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
 
 
 
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h1>Size,Variables & Methods</h1>
-    <h3>GET START</h3>
-	<a href= "size.jsp"><input type="button" value="SIZE"></a>
-	<a href= "variables.jsp"><input type="button" value="VARIABLES"></a>
-	<a href= "methods.jsp"><input type="button" value="METHODS"></a>
-  </div>
-  <div class="column" style="background-color:#bbb;">
-    <h1>Inheritance</h1>
+<div style="width: 30%; height:100%;" class="split left">
+  <div class="centered">
     
-	<a href= "inheritance.jsp"><input type="button" value="GET START"></a>
-  </div>
-  <div class="column" style="background-color:#ccc;">
-    <h1>Coupling</h1>
+    <h2>Select File</h2>
     
-	<a href= "coupling.jsp"><input type="button" value="GET START"></a>
+		
+		
+		
+		<form action="FileUploadHandler" enctype="multipart/form-data" method="post">
+		       <label for="fname">File Path</label>
+              Enter File Name	<input type="text" name="file_name"><br>
+				 Select<input type="file" id="fpath" name="fpath"  /><br> 
+               <input type="submit" value="upload" />
+           </form>  
+           
+           
+           <%
+           String file_name=(String)request.getParameter("filename");
+           if(file_name!=null){
+        	   out.println(file_name+" File uploaded successfuly");
+           }
+           %>
+	
+	<input type="button" value="Execute">
   </div>
-  <div class="column" style="background-color:#ddd;">
-    <h1>Control Structures</h1>
+</div>
+
+<div style="width: 70%; height:100%;"  class="split right">
+
+
+  <div class="container">
     
-	<a href= "controlStructures.jsp"><input type="button" value="GET START"></a>
+    <h2>COMPLEXITY DUE TO INHERITANCE</h2>
+    <table>
+	<colgroup>
+       <col width="2%" />
+       <col width="50%" />
+       <col width="12%" />
+	   <col width="12%" />
+	   <col width="12%" />
+	   <col width="12%" />
+    </colgroup>
+  <tr>
+    <th>Count</th>
+    <th>Class Name</th>
+    <th>No of direct inheritance</th>
+	<th>No of indirect inheritance</th>
+	<th>Total inheritance</th>
+	<th>Ci</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td></td>
+    <td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+</table>
   </div>
 </div>
 
