@@ -99,17 +99,20 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 
-<div style="width: 20%; height:100%;" class="split left">
+<div style="width: 30%; height:100%;" class="split left">
   <div class="centered">
     
-     <!-- Upload File Form -->    
-	
+    <h2>Select File</h2>
+    
+		
+		
+		
 		<form action="FileUploadHandler" enctype="multipart/form-data" method="post">
-		       
-              Enter Java Class Name	<input type="text" name="file_name"><br>
+		       <label for="fname">File Path</label>
+              Enter File Name	<input type="text" name="file_name"><br>
 				 Select<input type="file" id="fpath" name="fpath"  /><br> 
                <input type="submit" value="upload" />
-        </form>  
+           </form>  
            
            
            <%
@@ -118,67 +121,38 @@ input[type=button], input[type=submit], input[type=reset] {
         	   out.println(file_name+" File uploaded successfuly");
            }
            %>
+	
 	<input type="button" value="Execute">
   </div>
 </div>
 
-<div style="width: 80%; height:100%;"  class="split right">
+<div style="width: 70%; height:100%;"  class="split right">
 
 
   <div class="container">
     
-    <h2>COMPLEXITY DUE TO COUPLING</h2>
-    <table width="100%">
+    <h2>COMPLEXITY DUE TO INHERITANCE</h2>
+    <table>
 	<colgroup>
        <col width="2%" />
-       <col width="30%" />
-       <col width="3%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	   <col width="4%" />
-	</colgroup>
+       <col width="50%" />
+       <col width="12%" />
+	   <col width="12%" />
+	   <col width="12%" />
+	   <col width="12%" />
+    </colgroup>
   <tr>
-    <th style="font-size:12px">line num</th>
-    <th style="font-size:12px">Program statement</th>
-    <th style="font-size:12px">Nr</th>
-	<th style="font-size:12px">Nmcms</th>
-	<th style="font-size:12px">Nmcmd</th>
-	<th style="font-size:12px">Nmcrms</th>
-	<th style="font-size:12px">Nmcrmd</th>
-	<th style="font-size:12px">Nrmcrms</th>
-	<th style="font-size:12px">Nrmcrmd</th>
-	<th style="font-size:12px">Nrmcms</th>
-	<th style="font-size:12px">Nrmcmd</th>
-	<th style="font-size:12px">Nmrgvs</th>
-	<th style="font-size:12px">Nmrgvd</th>
-	<th style="font-size:12px">Nrmrgvs</th>
-	<th style="font-size:12px">Nrmrgvd</th>
-	<th style="font-size:12px">Ccp</th>
+    <th>Count</th>
+    <th>Class Name</th>
+    <th>No of direct inheritance</th>
+	<th>No of indirect inheritance</th>
+	<th>Total inheritance</th>
+	<th>Ci</th>
   </tr>
   <tr>
     <td>1</td>
     <td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -190,31 +164,11 @@ input[type=button], input[type=submit], input[type=reset] {
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
   <tr>
     <td>3</td>
     <td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -226,31 +180,11 @@ input[type=button], input[type=submit], input[type=reset] {
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
   <tr>
     <td>5</td>
     <td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -262,85 +196,35 @@ input[type=button], input[type=submit], input[type=reset] {
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
-    <tr>
+  <tr>
     <td>7</td>
     <td></td>
     <td></td>
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
-    <tr>
+  <tr>
     <td>8</td>
     <td></td>
     <td></td>
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
-    <tr>
+  <tr>
     <td>9</td>
     <td></td>
     <td></td>
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
   </tr>
-    <tr>
+  <tr>
     <td>10</td>
     <td></td>
     <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
 	<td></td>
 	<td></td>
 	<td></td>

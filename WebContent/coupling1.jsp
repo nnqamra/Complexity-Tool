@@ -102,11 +102,22 @@ input[type=button], input[type=submit], input[type=reset] {
 <div style="width: 20%; height:100%;" class="split left">
   <div class="centered">
     
-    <h2>Select File</h2>
-    <form>
-		<label for="fname">File Path</label>
-		<input type="text" id="fpath" name="fpath">
-	</form>
+  <!-- Upload File Form -->    
+	
+		<form action="FileUploadHandler" enctype="multipart/form-data" method="post">
+		       
+              Enter Java Class Name	<input type="text" name="file_name"><br>
+				 Select<input type="file" id="fpath" name="fpath"  /><br> 
+               <input type="submit" value="upload" />
+        </form>  
+           
+           
+           <%
+           String file_name=(String)request.getParameter("filename");
+           if(file_name!=null){
+        	   out.println(file_name+" File uploaded successfuly");
+           }
+           %>
 	<input type="button" value="Execute">
   </div>
 </div>
