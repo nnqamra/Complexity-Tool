@@ -126,24 +126,24 @@ input[type=button], input[type=submit], input[type=reset] {
   <div class="column" style="background-color:#aaa;">
     <h1>Size,Variables & Methods</h1>
     <h3>GET START</h3>
-	<input href="inheritance.jsp" type="button" value="SIZE">
-	<input href="inheritance.jsp" type="button" value="VARIABLES">
-	<input href="inheritance.jsp" type="button" value="METHODS">
+	<a href= "size.jsp"><input type="button" value="SIZE"></a>
+	<a href= "variables.jsp"><input type="button" value="VARIABLES"></a>
+	<a href= "methods.jsp"><input type="button" value="METHODS"></a>
   </div>
   <div class="column" style="background-color:#bbb;">
     <h1>Inheritance</h1>
     
-	<input href="inheritance.jsp" type="button" value="GET START">
+	<a href= "inheritance.jsp"><input type="button" value="GET START"></a>
   </div>
   <div class="column" style="background-color:#ccc;">
     <h1>Coupling</h1>
     
-	<input href="inheritance.jsp" type="button" value="GET START">
+	<a href= "coupling.jsp"><input type="button" value="GET START"></a>
   </div>
   <div class="column" style="background-color:#ddd;">
     <h1>Control Structures</h1>
     
-	<input href="inheritance.jsp" type="button" value="GET START">
+	<a href= "controlStructures.jsp"><input type="button" value="GET START"></a>
   </div>
 </div>
 
